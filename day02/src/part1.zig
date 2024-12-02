@@ -13,7 +13,7 @@
 const std = @import("std");
 const opt = @import("build_options");
 
-pub fn isSafe(items: []i32) bool {
+fn isSafe(items: []i32) bool {
     var is_ascending = true;
     var is_descending = true;
     for (items[0 .. items.len - 1], items[1..]) |n0, n1| {

@@ -12,7 +12,7 @@ pub fn build(b: *std.Build) void {
     build_options.addOption([]const u8, "path", inputs_path);
 
     const exe1 = b.addExecutable(.{
-        .name = "day02-part1",
+        .name = "day03-part1",
         .root_source_file = b.path("src/part1.zig"),
         .target = target,
         .optimize = optimize,
@@ -22,7 +22,7 @@ pub fn build(b: *std.Build) void {
     b.installArtifact(exe1);
 
     const exe2 = b.addExecutable(.{
-        .name = "day02-part2",
+        .name = "day03-part2",
         .root_source_file = b.path("src/part2.zig"),
         .target = target,
         .optimize = optimize,

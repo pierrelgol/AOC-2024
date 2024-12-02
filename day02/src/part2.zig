@@ -37,7 +37,7 @@ fn inspectFurther(subitems: []i32) bool {
     }
 }
 
-pub fn isSafe(items: []i32) bool {
+fn isSafe(items: []i32) bool {
     var buffer: [1024]i32 = undefined;
     const len = items.len;
     if (inspectFurther(items)) {
